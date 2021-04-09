@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+		<RootNamespace>WinUIWPFSample</RootNamespace>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<Platforms>x86;x64</Platforms>
+		<RuntimeIdentifiers>win10-x86;win10-x64</RuntimeIdentifiers>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.0.1" />
+		<PackageReference Include="Microsoft.ProjectReunion" Version="0.5.0" />
+		<PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.5.0" />
+		<PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.5.0" />
+		<Manifest Include="$(ApplicationManifest)" />
+	</ItemGroup>
+</Project>
